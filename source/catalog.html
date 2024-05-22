@@ -3,22 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <title>Страница каталога</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicons/180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
         <nav class="navigation">
           <a class="navigation__logo logo" href="index.html">
-            <img
-              class="logo__image"
-              src="../source/images/icons/logo-mobile.svg"
-              width="33"
-              height="38"
-              alt="logo"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                type="image/svg+xml"
+                width="70"
+                height="59"
+                srcset="images/desktop/logo-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                type="image/svg+xml"
+                width="60"
+                height="50"
+                srcset="images/tablet/logo-tablet.svg"
+              />
+              <img
+                class="logo__image"
+                src="images/mobile/logo-mobile.svg"
+                width="33"
+                height="38"
+                alt="logo"
+              />
+            </picture>
             <img
               class="logo__text"
-              src="../source/images/icons/logo-text.svg"
+              src="images/icons/logo-text.svg"
               width="101"
               height="18"
               alt="cat energy text"
@@ -50,13 +70,36 @@
           <h2 class="catalog__title">Каталог продукции</h2>
           <ul class="catalog__list">
             <li class="catalog__item product">
-              <img
-                class="product__image"
-                src="images"
-                width="68"
-                height="86"
-                alt="изображение товара"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                  width="161"
+                  height="172"
+                  srcset="
+                    images/desktop/catalog-chicken500-desktop@1x.png 1x,
+                    images/desktop/catalog-chicken500-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/png"
+                  width="161"
+                  height="172"
+                  srcset="
+                    images/tablet/catalog-chicken500-tablet@1x.png 1x,
+                    images/tablet/catalog-chicken500-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="product__image"
+                  src="images/mobile/catalog-chicken500-mobile@1x.png"
+                  srcset="images/mobile/catalog-chicken500-mobile@2x.png"
+                  width="68"
+                  height="87"
+                  alt="изображение товара"
+                />
+              </picture>
               <div class="product__info">
                 <h3 class="product__title">Cat Energy PRO 500 г</h3>
                 <ul class="product__list">
@@ -79,13 +122,36 @@
               </button>
             </li>
             <li class="catalog__item product">
-              <img
-                class="product__image"
-                src="images"
-                width="68"
-                height="86"
-                alt="изображение товара"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                  width="172"
+                  height="196"
+                  srcset="
+                    images/desktop/catalog-chicken1000-desktop@1x.png 1x,
+                    images/desktop/catalog-chicken1000-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/png"
+                  width="168"
+                  height="206"
+                  srcset="
+                    images/tablet/catalog-chicken1000-tablet@1x.png 1x,
+                    images/tablet/catalog-chicken1000-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="product__image"
+                  src="images/mobile/catalog-chicken1000-mobile@1x.png"
+                  srcset="images/mobile/catalog-chicken1000-mobile@2x.png"
+                  width="84"
+                  height="101"
+                  alt="изображение товара"
+                />
+              </picture>
               <div class="product__info">
                 <h3 class="product__title">Cat Energy PRO 1000 г</h3>
                 <ul class="product__list">
@@ -108,13 +174,36 @@
               </button>
             </li>
             <li class="catalog__item product">
-              <img
-                class="product__image"
-                src="images"
-                width="68"
-                height="86"
-                alt="изображение товара"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                  width="161"
+                  height="174"
+                  srcset="
+                    images/desktop/catalog-fish500-desktop@1x.png 1x,
+                    images/desktop/catalog-fish500-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/png"
+                  width="163"
+                  height="174"
+                  srcset="
+                    images/tablet/catalog-fish500-tablet@1x.png 1x,
+                    images/tablet/catalog-fish500-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="product__image"
+                  src="images/mobile/catalog-fish500-mobile@1x.png"
+                  srcset="images/mobile/catalog-fish500-mobile@2x.png"
+                  width="68"
+                  height="79"
+                  alt="изображение товара"
+                />
+              </picture>
               <div class="product__info">
                 <h3 class="product__title">Cat Energy PRO 500 г</h3>
                 <ul class="product__list">
@@ -137,13 +226,36 @@
               </button>
             </li>
             <li class="catalog__item product">
-              <img
-                class="product__image"
-                src="images"
-                width="68"
-                height="86"
-                alt="изображение товара"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                  width="172"
+                  height="196"
+                  srcset="
+                    images/desktop/catalog-fish1000-desktop@1x.png 1x,
+                    images/desktop/catalog-fish1000-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/png"
+                  width="168"
+                  height="200"
+                  srcset="
+                    images/tablet/catalog-fish1000-tablet@1x.png 1x,
+                    images/tablet/catalog-fish1000-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="product__image"
+                  src="images/mobile/catalog-fish1000-mobile@1x.png"
+                  srcset="images/mobile/catalog-fish1000-mobile@2x.png"
+                  width="84"
+                  height="101"
+                  alt="изображение товара"
+                />
+              </picture>
               <div class="product__info">
                 <h3 class="product__title">Cat Energy PRO 1000 г</h3>
                 <ul class="product__list">
@@ -166,13 +278,36 @@
               </button>
             </li>
             <li class="catalog__item product">
-              <img
-                class="product__image"
-                src="images"
-                width="68"
-                height="86"
-                alt="изображение товара"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                  width="161"
+                  height="171"
+                  srcset="
+                    images/desktop/catalog-slim500-desktop@1x.png 1x,
+                    images/desktop/catalog-slim500-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/png"
+                  width="161"
+                  height="171"
+                  srcset="
+                    images/tablet/catalog-slim500-tablet@1x.png 1x,
+                    images/tablet/catalog-slim500-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="product__image"
+                  src="images/mobile/catalog-slim500-mobile@1x.png"
+                  srcset="images/mobile/catalog-slim1000-mobile@2x.png"
+                  width="68"
+                  height="79"
+                  alt="изображение товара"
+                />
+              </picture>
               <div class="product__info">
                 <h3 class="product__title">Cat Energy SLIM 500 г</h3>
                 <ul class="product__list">
@@ -195,13 +330,36 @@
               </button>
             </li>
             <li class="catalog__item product">
-              <img
-                class="product__image"
-                src="images"
-                width="68"
-                height="86"
-                alt="изображение товара"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                  width="172"
+                  height="196"
+                  srcset="
+                    images/desktop/catalog-slim1000-desktop@1x.png 1x,
+                    images/desktop/catalog-slim1000-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/png"
+                  width="168"
+                  height="200"
+                  srcset="
+                    images/tablet/catalog-slim1000-tablet@1x.png 1x,
+                    images/tablet/catalog-slim1000-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="product__image"
+                  src="images/mobile/catalog-slim1000-mobile@1x.png"
+                  srcset="images/mobile/catalog-slim1000-mobile@2x.png"
+                  width="84"
+                  height="101"
+                  alt="изображение товара"
+                />
+              </picture>
               <div class="product__info">
                 <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
                 <ul class="product__list">
@@ -224,13 +382,36 @@
               </button>
             </li>
             <li class="catalog__item product">
-              <img
-                class="product__image"
-                src="images"
-                width="68"
-                height="86"
-                alt="изображение товара"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  type="image/png"
+                  width="163"
+                  height="174"
+                  srcset="
+                    images/desktop/catalog-rice-desktop@1x.png 1x,
+                    images/desktop/catalog-rice-desktop@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  type="image/png"
+                  width="163"
+                  height="174"
+                  srcset="
+                    images/tablet/catalog-rice-tablet@1x.png 1x,
+                    images/tablet/catalog-rice-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  class="product__image"
+                  src="images/mobile/catalog-rice-mobile@1x.png"
+                  srcset="images/mobile/catalog-rice-mobile@2x.png"
+                  width="72"
+                  height="85"
+                  alt="изображение товара"
+                />
+              </picture>
               <div class="product__info">
                 <h3 class="product__title">Cat Energy SLIM 500 г</h3>
                 <ul class="product__list">
@@ -360,19 +541,21 @@
             </p>
           </div>
         </div>
-        <img
-          src="../source/images/map-mobile.png"
-          width="320"
-          height="362"
-          alt="карта"
-        />
+        <picture>
+          <img
+            src="images/map-mobile.png"
+            width="320"
+            height="362"
+            alt="карта"
+          />
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo" href="index.html">
           <img
-            src="../source/images/icons/footer-logo.svg"
+            src="images/icons/footer-logo.svg"
             width="128"
             height="24"
             alt="логотип cat energy"
@@ -408,7 +591,7 @@
           <span class="copyright__text">HTML Academy</span>
           <img
             class="copyright__logo"
-            src="../source/images/icons/html-academy.png"
+            src="images/icons/html-academy.png"
             width="27"
             height="34"
             alt="логотип HTML Academy"
